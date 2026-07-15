@@ -2,7 +2,7 @@ const populationUrl = "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/vaerak/11r
 const employmentUrl = "https://pxdata.stat.fi/PxWeb/api/v1/fi/StatFin/tyokay/115b.px";
 
 const setupTable = (populationData, employmentData) => {
-  const table = document.getElementById("data-table");
+  const table = document.getElementById("table-body");
   const labels = populationData.dimension.alue_23_20260101.category.label;
   let municapilityArray = [];
   for (const label of Object.values(labels)) { 
