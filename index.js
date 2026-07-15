@@ -16,6 +16,13 @@ const setupTable = (populationData, employmentData) => {
     const cell2 = row.insertCell(1);
     const cell3 = row.insertCell(2);
     const cell4 = row.insertCell(3);
+
+    if (i % 2 === 0) {
+      row.style.backgroundColor = "#f2f2f2";
+    } else {
+      row.style.backgroundColor = "#ffffff";
+    }
+
     const employmentRate = (employmentData.value[i] / populationData.value[i]) * 100;
     cell1.innerHTML = municapilityArray[i];
     cell2.innerHTML = populationData.value[i];
